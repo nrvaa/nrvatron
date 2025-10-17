@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatron</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="CALCU.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <!-- Container untuk navigasi di tengah atas -->
+    <div class="nav-container">
+        <nav class="Navbar">
+            <a href="cal.html" class="nav-link">Calculatron</a>
+            <a href="tictactron.html" class="nav-link">Tic-Tac-Tron</a>
+            <a href="index.html" class="nav-link">About</a>
+        </nav>
+    </div>
+    
+    <div>
+      <div id="brand" class="label-bawah">
+      <h1>🧮 CALCULATRON 🤖</h1>
+    </div>
+    
+    <div id="calculator">
+      <!-- Menambahkan efek grid background -->
+      <div class="grid-overlay"></div>
+      <input id="display" readonly data-input-length="0" />
+      <div id="button">
+        <button onclick="appendToDisplay('+')" class="operator">+</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('-')" class="operator">-</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')" class="operator">×</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('/')" class="operator">÷</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('00')">00</button>
+        <button onclick="appendToDisplay('000')">000</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="clearDisplay()" class="operator">AC</button>
+        <button onclick="deleteLast()" class="operator">DEL</button>
+        <button onclick="calculate()" class="operator">=</button>
+      </div>
+    </div>
+    <div>
+      <h2 class="label-bawah">Created by Aditz</h2>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
